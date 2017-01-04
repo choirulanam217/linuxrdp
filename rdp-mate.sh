@@ -29,3 +29,8 @@ echo "|                            |"
 echo "|    Instalation Complete!   |"
 echo "|                            |"
 echo "=============================="
+echo ""
+echo "Server will be reboot . . ."
+
+# reboot
+reboot
