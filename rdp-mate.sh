@@ -14,13 +14,6 @@ apt-get -y upgrade
 # install ubuntu mate
 apt-get install ubuntu-mate-core ubuntu-mate-desktop -y
 
-# install chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg –I google-chrome-stable_current_amd64.deb
-
-# install wine
-apt-get install wine -y
-
 # install xrdp
 apt-get install xrdp -y
 
@@ -38,18 +31,18 @@ wget https://raw.githubusercontent.com/choirulanam217/linuxrdp/master/xrdp.ini
 # go to root
 cd
 
-# clean installer
-rm google-chrome-stable_current_amd64.deb
-
-# restart xrdp
-service xrdp restart
-
 #
-echo "=============================="
-echo "|                            |"
-echo "|    Instalation Complete!   |"
-echo "|                            |"
-echo "=============================="
+echo "========================================"
+echo "|                                      |"
+echo "|         Instalation Complete!        |"
+echo "|                                      |"
+echo "========================================"
+echo ""
+echo ""
+echo "Server will be reboot. Please wait..."
 
 # clean installer
 rm rdp-mate.sh
+
+# reboot
+reboot
